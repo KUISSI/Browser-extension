@@ -11,6 +11,9 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="desktop.css">
+
 
     <title>Frontend Mentor | Browser extensions manager UI</title>
 
@@ -26,19 +29,19 @@
     </style>
   </head>
   <body>
-    <main>
+
       <header>
 <img src="/assets/images/logo.svg" alt="logosite">
-<h3>Extensions</h3>
+
 <button><img src="/assets/images/icon-sun.svg" alt=""></button>
       </header>
 
       <h1>Extensions List</h1>
-      <div>
+      <div class="extensions">
         <button>All</button> <button>Active</button> <button>Inactive</button>
       </div>
       <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
+      <main>
       <section>
         <article>
           <div class="image">
@@ -170,10 +173,20 @@
          </article>
        </section>
 
-      <div>
+       <section>
+        <article>
+          <div class="image">
         <img src="/assets/images/logo-grid-guides.svg" alt="gridguides" />
-        GridGuides Overlay customizable grids and alignment guides on any
-        webpage. Remove</button>
+      </div>
+      <div>
+        <h2>GridGuides</h2>
+        <p>Overlay customizable grids and alignment guides on any
+        webpage.</p>
+      </div>
+    </article>
+
+        <article>
+          <button>Remove</button>
         <input type="checkbox" name="on" id="" />
        </article>
      </section>
@@ -245,6 +258,9 @@
         <h2>ConsolePlus</h2>
         <p>Enhanced developer console with advanced filtering and
         logging.</p>
+      </div>
+    </article>
+    <article>
         <button>Remove</button>
         <input type="checkbox" name="on" id="" />
       </article>
