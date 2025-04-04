@@ -1,80 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Browser extensions manager UI</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Browser extensions manager UI</title>
 
-  Extensions List
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+<img src="/assets/images/logo.svg" alt="logosite">
+<h3>Extensions</h3>
+<button><img src="/assets/images/icon-sun.svg" alt=""></button>
+      </header>
 
-  All
-  Active
-  Inactive
+      <h1>Extensions List</h1>
+      <div>
+        <button>All</button> <button>Active</button> <button>Inactive</button>
+      </div>
+      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
 
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+      <section>
+        <article>
+          <div class="image">
+            <img src="/assets/images/logo-devlens.svg" alt="devlens" />
+          </div>
+          <div>
+            <h2>DevLens</h2>
+            <p>
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </article>
 
-  DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
+        <article>
+          <button>Remove</button>
+          <input type="checkbox" name="on" id="" />
+        </article>
+      </section>
 
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
+      <section>
+        <article>
+          <div class="image">
+        <img src="/assets/images/logo-style-spy.svg" alt="stylespy" />
+      </div>    
+      <div>
+        <h2>StyleSpy </h2>
+        
+        <p>Instantly analyze and copy CSS from any webpage element.</p> 
+      </div>
+    </article>
+        
+    <article>
+      <button>Remove</button>
+      <input type="checkbox" name="on" id="" />
+    </article>
+  </section>
 
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
+  <section>
+    <article>
+      <div class="image">
+        <img src="/assets/images/logo-speed-boost.svg" alt="speedboost" />
+      </div>
+      <div>
 
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
+        <h2>SpeedBoost </h2>
+        <p>Optimizes browser resource usage to accelerate page loading.</p>
+      </div>
+    </article>
 
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
+        <article>
+          <button>Remove</button>
+          <input type="checkbox" name="on" id="" />
+        </article>
+      </section>
 
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
+      <section>
+        <article>
+          <div class="image">
+        <img src="/assets/images/logo-json-wizard.svg" alt="json" />
+      </div>
 
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
+        <div>
+        <h2>JSONWizard</h2> 
+        <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+        </div>
+      </article>
+      
+        <article>
+          <button>Remove</button>
+      <input type="checkbox" name="on" id="" />
+    </article>
+  </section>
 
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
+  <section>
+    <article>
+      <div class="image">
+        <img src="/assets/images/logo-tab-master-pro.svg" alt="tabmaster" />
+      </div>
+    </article>
 
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
+        <div>
+        <h2>TabMaster Pro</h2>
+       <p> Organizes browser tabs into groups and sessions. </p>
+      </div>
+    </article>
 
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
+       <article>
+       <button>Remove</button>
+       <input type="checkbox" name="on" id="" />
+      </article>
+    </section>
 
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
+   <section>
+    <article>
+      <div class="image">
+        <img src="/assets/images/logo-viewport-buddy.svg" alt="viewport" />
+      </div>
 
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
+        <div>
+          <h2>ViewportBuddy</h2> 
+          <p>Simulates various screen resolutions directly within the
+        browser.</p> 
+      </div>
+    </article>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <article>
+      <button>Remove</button>
+      <input type="checkbox" name="on" id="" />
+     </article>
+   </section>
+
+
+   <section>
+    <article>
+      <div class="image">
+        <img src="/assets/images/logo-markup-notes.svg" alt="markup" />
+      </div>
+
+      <div>
+        <h2>Markup Notes </h2>
+       <p> Enables annotation and notes directly onto webpages for
+        collaborative debugging.</p> 
+      </div>
+    </article>
+
+        <article>
+          <button>Remove</button>
+          <input type="checkbox" name="on" id="" />
+         </article>
+       </section>
+
+      <div>
+        <img src="/assets/images/logo-grid-guides.svg" alt="gridguides" />
+        GridGuides Overlay customizable grids and alignment guides on any
+        webpage. Remove</button>
+        <input type="checkbox" name="on" id="" />
+       </article>
+     </section>
+
+
+     <section>
+      <article>
+        <div class="image">
+        <img src="/assets/images/logo-palette-picker.svg" alt="palette" />
+      </div>
+
+      <div>
+       <h2>Palette</h2>
+        <p>Picker Instantly extracts color palettes from any webpage.</p>
+      </div>
+    </article>
+
+        <article>
+          <button>Remove</button>
+          <input type="checkbox" name="on" id="" />
+         </article>
+       </section>
+
+
+       <section>
+        <article>
+          <div>
+        <img src="/assets/images/logo-link-checker.svg" alt="linkchecker" />
+      </div>
+
+      <div>
+        <h2>LinkChecker</h2>
+        <p>Scans and highlights broken links on any page.</p>
+              </div>
+    </article>
+    
+        <article>
+          <button> Remove</button>
+          <input type="checkbox" name="on" id="" />
+         </article>
+       </section>
+
+
+       <section>
+        <article>
+          <div>
+        <img src="/assets/images/logo-dom-snapshot.svg" alt="dom" />
+      </div>
+      <div>
+        <h2>DOM Snapshot</h2>
+        <p>Capture and export DOM structures quickly.</p>
+      </div>
+    </article>
+    
+        <article>
+          <button> Remove
+          </button>
+          <input type="checkbox" name="on" id="" />
+         </article>
+       </section>
+
+
+       <section>
+        <article>
+          <div>
+        <img src="/assets/images/logo-console-plus.svg" alt="consoleplus" />
+      </div>
+      <div>
+        <h2>ConsolePlus</h2>
+        <p>Enhanced developer console with advanced filtering and
+        logging.</p>
+        <button>Remove</button>
+        <input type="checkbox" name="on" id="" />
+      </article>
+    </section>
+
+    </main>
+  </body>
 </html>
